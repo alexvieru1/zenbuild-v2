@@ -46,33 +46,33 @@ const DezvoltariMain = () => {
 
   const completedProjects = [
     {
-      title: "Cavar Residence",
+      title: "Sud Residence",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
       images: [
-        "/images/ongoing-projects/cavar-1.png",
-        "/images/ongoing-projects/cavar-2.png",
-        "/images/ongoing-projects/cavar-3.png",
+        "/images/completed-projects/sud-1.webp",
+        "/images/completed-projects/sud-2.webp",
+        "/images/completed-projects/sud-3.webp",
       ],
     },
     {
-      title: "Lakefield Residence",
+      title: "Corbeanca Residence",
       description:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       images: [
-        "/images/ongoing-projects/lakefield-1.png",
-        "/images/ongoing-projects/lakefield-2.png",
-        "/images/ongoing-projects/lakefield-3.png",
+        "/images/completed-projects/corbeanca-1.webp",
+        "/images/completed-projects/corbeanca-2.webp",
+        "/images/completed-projects/corbeanca-3.webp",
       ],
     },
     {
-      title: "Avalon Residence",
+      title: "Upground Residence",
       description:
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       images: [
-        "/images/ongoing-projects/avalon-1.png",
-        "/images/ongoing-projects/avalon-2.png",
-        "/images/ongoing-projects/avalon-3.png",
+        "/images/completed-projects/upground-1.webp",
+        "/images/completed-projects/upground-2.webp",
+        "/images/completed-projects/upground-3.jpg",
       ],
     },
   ];

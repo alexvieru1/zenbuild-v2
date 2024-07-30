@@ -18,35 +18,35 @@ const UtilajeMain = () => {
     {
       name: "Excavatoare",
       description: "Pentru săpături, excavări și manipulare de materiale.",
-      image: "/images/bulldozer.webp",
+      image: "/images/excavator.jpg",
     },
     {
       name: "Macarale",
       description: "Pentru ridicarea și deplasarea materialelor grele.",
-      image: "/images/bulldozer.webp",
+      image: "/images/macara.png",
     },
     {
       name: "Betoniere",
       description: "Pentru amestecarea și turnarea betonului.",
-      image: "/images/bulldozer.webp",
+      image: "/images/betoniera.webp",
     },
     {
       name: "Autobasculante",
       description:
         "Pentru transportul eficient al materialelor vrac și de construcții.",
-      image: "/images/bulldozer.webp",
+      image: "/images/basculanta.webp",
     },
     {
       name: "Compactori",
       description:
         "Pentru compactarea solului și a materialelor de construcție.",
-      image: "/images/bulldozer.webp",
+      image: "/images/compactor.jpeg",
     },
     {
       name: "Schelă pentru Bloc",
       description:
         "Pentru lucrări de înălțime și construcții de structuri complexe.",
-      image: "/images/bulldozer.webp",
+      image: "/images/schela.webp",
     },
   ];
 

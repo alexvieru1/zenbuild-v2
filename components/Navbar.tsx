@@ -31,33 +31,34 @@ const Navbar = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
                   href="/"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md
+                   font-medium"
                 >
                   Acasa
                 </Link>
                 <Link
                   href="/servicii"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Servicii
                 </Link>
                 <Link
                   href="/dezvoltari-imobiliare"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Dezvoltări Imobiliare
                 </Link>
                 <Link
                   href="/inchirieri-utilaje"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Închirieri Utilaje{" "}
                 </Link>
                 <Link
                   href="/pentru-constructori"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
                 >
-                  Pentru construsctori 
+                  Pentru constructori
                 </Link>
               </div>
             </div>
@@ -126,13 +127,13 @@ const Navbar = () => {
             href="/inchirieri-utilaje"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
           >
-            Închirieri Utilaje 
+            Închirieri Utilaje
           </Link>
           <Link
             href="/pentru-constructori"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
           >
-            Pentru construsctori 
+            Pentru constructori
           </Link>
         </div>
       </motion.div>

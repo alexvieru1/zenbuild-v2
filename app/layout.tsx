@@ -29,10 +29,8 @@ export default function RootLayout({
         )}
       >
         <Navbar />
-        <main className="pt-16">
-          {children}
-        </main>
-        <Footer/>
+        <main className="pt-16">{children}</main>
+        <Footer />
       </body>
     </html>
   );

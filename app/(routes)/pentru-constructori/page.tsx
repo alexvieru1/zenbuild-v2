@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import ConstructoriHero from "./components/ConstructoriHero";
+import ConstructoriMain from "./components/ConstructoriMain";
 
 const page = () => {
   return (
-    <div>pentru-constructori</div>
-  )
-}
+    <div>
+      {" "}
+      <ConstructoriHero /> <ConstructoriMain />
+    </div>
+  );
+};
 
-export default page
+export default page;
