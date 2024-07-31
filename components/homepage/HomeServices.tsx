@@ -24,7 +24,7 @@ const HomeServices = () => {
             </div>
             <div className="grid 4xs:grid-cols-1 xl:grid-cols-3 lg:w-[98%]">
               <div className="flex flex-col justify-center items-center">
-                <Image src="/images/sr-1.png" width={300} height={300} alt="img" />
+                <Image src="/images/hp-1.png" width={300} height={300} alt="img" />
                 <motion.div
                   className="bg-white border-[1px] border-[#bb835e] flex flex-col justify-start items-center w-[80%] h-[30%] p-6"
                   initial={{ opacity: 0, y: 100 }}
@@ -44,7 +44,7 @@ const HomeServices = () => {
                 </motion.div>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <Image src="/images/sr-2.png" width={300} height={300} alt="img" />
+                <Image src="/images/hp-2.png" width={300} height={300} alt="img" />
                 <motion.div
                   className="bg-white border-[1px] border-[#bb835e] flex flex-col justify-start items-center w-[80%] h-[30%] p-6"
                   initial={{ opacity: 0, y: 100 }}
@@ -64,7 +64,7 @@ const HomeServices = () => {
                 </motion.div>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <Image src="/images/sr-3.png" width={300} height={300} alt="img" />
+                <Image src="/images/hp-3.png" width={300} height={300} alt="img" />
                 <motion.div
                   className="bg-white border-[1px] border-[#bb835e] flex flex-col justify-start items-center w-[80%] h-[30%] p-6"
                   initial={{ opacity: 0, y: 100 }}

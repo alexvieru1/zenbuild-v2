@@ -11,12 +11,16 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow-md fixed w-full z-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" passHref>
+            <Link href="/" passHref onClick={closeMenu}>
               <Image
                 src="/images/logo-fundal-transparent.png"
                 alt="Logo"
@@ -31,8 +35,7 @@ const Navbar = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
                   href="/"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md
-                   font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Acasa
                 </Link>
@@ -108,30 +111,35 @@ const Navbar = () => {
           <Link
             href="/"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMenu}
           >
             Acasa
           </Link>
           <Link
             href="/servicii"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMenu}
           >
             Servicii
           </Link>
           <Link
             href="/dezvoltari-imobiliare"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMenu}
           >
             Dezvoltări Imobiliare
           </Link>
           <Link
             href="/inchirieri-utilaje"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMenu}
           >
             Închirieri Utilaje
           </Link>
           <Link
             href="/pentru-constructori"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMenu}
           >
             Pentru constructori
           </Link>

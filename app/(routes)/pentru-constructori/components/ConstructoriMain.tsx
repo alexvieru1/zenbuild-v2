@@ -1,13 +1,14 @@
+"use client";
 import { Drill, HardHat, PaintRoller } from "lucide-react";
 import React from "react";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 const ConstructoriMain = () => {
   const constructori = [
@@ -56,8 +57,12 @@ const ConstructoriMain = () => {
         ))}
       </div>
       <div className="flex justify-center">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 my-10 p-2 ">
-          <div>
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-20 my-10 p-2">
+          <motion.div
+            initial={{ x: "-100px", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
+          >
             <h1 className="text-lg font-semibold">Cum putem colabora?</h1>
             <ul>
               <li> • Proiecte de construcții noi sau de renovare.</li>
@@ -67,10 +72,19 @@ const ConstructoriMain = () => {
               </li>
               <li> • Dezvoltări imobiliare în parteneriat.</li>
             </ul>
-          </div>
-          <div>
-            <h1>Contact</h1>
-          </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ x: "100px", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
+          >
+            <h1 className="text-lg font-semibold">Contact</h1>
+            <p>Strada Exemplu, Nr. 123, Oraș, Țară</p>
+            <p>Telefon: +40 123 456 789</p>
+            <p>Email: contact@exemplu.com</p>
+            <p>CUI: 12345678</p>
+          </motion.div>
         </div>
       </div>
     </div>

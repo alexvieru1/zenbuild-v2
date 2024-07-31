@@ -68,7 +68,7 @@ const HomeHero = () => {
             <Button className="" onClick={handleScroll}>
               Descoperă Mai Mult
             </Button>
-            <Link href="/contact">
+            <Link href="tel:+40123456789">
               <Button variant={"secondary"}>Suna-ne</Button>
             </Link>
           </div>
