@@ -10,6 +10,28 @@ import {
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+
+const formSchema = z.object({
+  fullName: z.string().min(2, { message: "Numele complet este obligatoriu." }),
+  email: z.string().email({ message: "Adresa de e-mail invalidă." }),
+  subject: z.string().min(2, { message: "Subiectul este obligatoriu." }),
+  message: z.string().min(10, { message: "Mesajul trebuie să fie mai lung." }),
+});
 
 const ConstructoriMain = () => {
   const constructori = [
@@ -36,6 +58,21 @@ const ConstructoriMain = () => {
     },
   ];
 
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      fullName: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+  });
+
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values);
+    // Handle form submission, e.g., send the data to your backend.
+  }
+
   return (
     <div className="w-full flex flex-col justify-center items-center p-8">
       <h1 className="w-[80%] text-xl font-semibold text-center my-8">
@@ -57,7 +94,7 @@ const ConstructoriMain = () => {
           </Card>
         ))}
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col justify-center">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-20 my-10 p-2">
           <motion.div
             initial={{ x: "-100px", opacity: 0 }}
@@ -90,6 +127,72 @@ const ConstructoriMain = () => {
             </Link>
             <p>CUI: 50139928</p>
           </motion.div>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <p className="font-semibold text-lg my-4">Formular de contact</p>
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="space-y-8 w-full max-w-lg"
+            >
+              <FormField
+                control={form.control}
+                name="fullName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Nume Complet</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Numele dumneavoastră" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Adresa e-mail</FormLabel>
+                    <FormControl>
+                      <Input placeholder="exemplu@domeniu.com" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="subject"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Subiect</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Subiectul mesajului" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Mesaj</FormLabel>
+                    <FormControl>
+                      <Textarea
+                        placeholder="Scrieți mesajul aici..."
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <Button type="submit">Trimite</Button>
+            </form>
+          </Form>
         </div>
       </div>
     </div>
