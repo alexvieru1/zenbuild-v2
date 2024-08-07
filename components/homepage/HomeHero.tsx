@@ -60,7 +60,7 @@ const HomeHero = () => {
           <h1 className="flex justify-center items-center 4xs:text-lg md:text-2xl font-semibold">
             Construcții de Calitate, Proiecte Durabile
           </h1>
-          <p className="flex justify-center items-center place-self-center 4xs:text-xs md:text-md text-center md:mt-4">
+          <p className="flex justify-center items-center place-self-center 4xs:text-base md:text-md text-center md:mt-4">
             Suntem partenerul tău de încredere în dezvoltarea imobiliară și
             construcțiile de calitate superioară
           </p>
@@ -68,7 +68,7 @@ const HomeHero = () => {
             <Button className="" onClick={handleScroll}>
               Descoperă Mai Mult
             </Button>
-            <Link href="tel:+40123456789">
+            <Link href="tel:+40764696008">
               <Button variant={"secondary"}>Suna-ne</Button>
             </Link>
           </div>

@@ -46,10 +46,10 @@ const DezvoltariHero = () => {
           }}
           viewport={{ once: true }}
         >
-          <h1 className="flex justify-center items-center 4xs:text-lg md:text-2xl font-semibold">
+          <h1 className="flex justify-center items-center text-center 4xs:text-lg md:text-2xl font-semibold">
             Proiectele Noastre Imobiliare
           </h1>
-          <p className="flex justify-center items-center place-self-center 4xs:text-xs md:text-md text-center md:mt-4">
+          <p className="flex justify-center items-center place-self-center 4xs:text-base md:text-md text-center md:mt-4">
             Suntem mândri să prezentăm portofoliul nostru diversificat de
             proiecte imobiliare, realizate atât independent, cât și în
             colaborare cu alți dezvoltatori. Fiecare proiect reflectă

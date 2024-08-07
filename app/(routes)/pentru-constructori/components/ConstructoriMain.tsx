@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ConstructoriMain = () => {
   const constructori = [
@@ -81,9 +82,13 @@ const ConstructoriMain = () => {
           >
             <h1 className="text-lg font-semibold">Contact</h1>
             <p>Strada Exemplu, Nr. 123, Oraș, Țară</p>
-            <p>Telefon: +40 123 456 789</p>
-            <p>Email: contact@exemplu.com</p>
-            <p>CUI: 12345678</p>
+            <Link href="tel:+40764696008">
+              <p>Telefon: +40764 696 008</p>
+            </Link>
+            <Link href="mailto:office@zenbuild.ro">
+              <p>Email: office@zenbuild.ro</p>
+            </Link>
+            <p>CUI: 50139928</p>
           </motion.div>
         </div>
       </div>

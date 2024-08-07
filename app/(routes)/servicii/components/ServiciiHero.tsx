@@ -49,7 +49,7 @@ const ServiciiHero = () => {
           <h1 className="flex justify-center items-center 4xs:text-lg md:text-2xl font-semibold">
             Serviciile noastre
           </h1>
-          <p className="flex justify-center items-center place-self-center 4xs:text-xs md:text-md text-center md:mt-4">
+          <p className="flex justify-center items-center place-self-center 4xs:text-base md:text-md text-center md:mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

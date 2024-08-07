@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const images = ["/images/pc-1.jpeg", "/images/pc-2.jpg", "/images/pc-3.webp"];
 
-const ConstructoriHero = () => {
+const FiziceHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -43,14 +43,13 @@ const ConstructoriHero = () => {
           viewport={{ once: true }}
         >
           <h1 className="flex justify-center items-center 4xs:text-lg md:text-2xl font-semibold">
-            Pentru Constructori
+            Persoane Fizice
           </h1>
           <p className="flex justify-center items-center place-self-center 4xs:text-base md:text-md text-center md:mt-4">
-            Suntem interesați să colaborăm cu alte firme de construcții pentru a
-            dezvolta proiecte de succes și pentru a aduce inovație în industrie.
-            Oferim oportunități de colaborare pe multiple nivele și suntem
-            deschiși să explorăm parteneriate care să aducă valoare adăugată
-            ambelor părți.
+            La Zen Build, suntem dedicați să oferim servicii complete de
+            construcție și renovare pentru persoane fizice. Indiferent de
+            dimensiunea sau complexitatea proiectului, suntem pregătiți să
+            transformăm ideile dumneavoastră în realitate.
           </p>
         </motion.div>
       </div>
@@ -58,4 +57,4 @@ const ConstructoriHero = () => {
   );
 };
 
-export default ConstructoriHero;
+export default FiziceHero;

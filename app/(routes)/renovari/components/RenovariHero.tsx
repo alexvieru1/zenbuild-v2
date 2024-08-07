@@ -2,9 +2,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const images = ["/images/pc-1.jpeg", "/images/pc-2.jpg", "/images/pc-3.webp"];
+const images = [
+  "/images/servicii-3.jpg",
+  "/images/servicii-2.jpg",
+  "/images/servicii-1.jpg",
+];
 
-const ConstructoriHero = () => {
+const RenovariHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -43,14 +47,13 @@ const ConstructoriHero = () => {
           viewport={{ once: true }}
         >
           <h1 className="flex justify-center items-center 4xs:text-lg md:text-2xl font-semibold">
-            Pentru Constructori
+            Renovări
           </h1>
           <p className="flex justify-center items-center place-self-center 4xs:text-base md:text-md text-center md:mt-4">
-            Suntem interesați să colaborăm cu alte firme de construcții pentru a
-            dezvolta proiecte de succes și pentru a aduce inovație în industrie.
-            Oferim oportunități de colaborare pe multiple nivele și suntem
-            deschiși să explorăm parteneriate care să aducă valoare adăugată
-            ambelor părți.
+            La Zen Build suntem dedicați să transformăm fiecare spațiu într-un
+            loc de vis. Echipa noastră profesionistă oferă servicii complete de
+            renovare, acoperind toate aspectele necesare pentru a realiza
+            proiectul la cele mai înalte standarde de calitate.
           </p>
         </motion.div>
       </div>
@@ -58,4 +61,4 @@ const ConstructoriHero = () => {
   );
 };
 
-export default ConstructoriHero;
+export default RenovariHero;

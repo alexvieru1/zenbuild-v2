@@ -58,10 +58,22 @@ const Navbar = () => {
                   Închirieri Utilaje{" "}
                 </Link>
                 <Link
+                  href="/renovari"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                >
+                  Renovări
+                </Link>
+                <Link
+                  href="/persoane-fizice"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                >
+                  Persoane Fizice
+                </Link>
+                <Link
                   href="/pentru-constructori"
                   className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
                 >
-                  Pentru constructori
+                  Pentru Constructori
                 </Link>
               </div>
             </div>
@@ -137,11 +149,25 @@ const Navbar = () => {
             Închirieri Utilaje
           </Link>
           <Link
+            href="/renovari"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMenu}
+          >
+            Renovări
+          </Link>
+          <Link
+            href="/persoane-fizice"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMenu}
+          >
+            Persoane Fizice
+          </Link>
+          <Link
             href="/pentru-constructori"
             className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
             onClick={closeMenu}
           >
-            Pentru constructori
+            Pentru Constructori
           </Link>
         </div>
       </motion.div>
