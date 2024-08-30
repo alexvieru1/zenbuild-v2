@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/images/servicii-3.jpg",
-  "/images/servicii-2.jpg",
-  "/images/servicii-1.jpg",
+  "/images/renovari-1.jpg",
+  "/images/renovari-2.jpg",
+  "/images/renovari-3.jpg",
 ];
 
 const RenovariHero = () => {

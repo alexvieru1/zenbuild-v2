@@ -50,8 +50,12 @@ const ServiciiHero = () => {
             Serviciile noastre
           </h1>
           <p className="flex justify-center items-center place-self-center 4xs:text-base md:text-md text-center md:mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Oferim o gamă completă de servicii în construcții, acoperind toate
+            etapele și nevoile proiectului tău. De la fundații și structuri,
+            până la finisaje interioare și instalații, suntem pregătiți să
+            gestionăm orice tip de lucrare, indiferent de complexitate. Cu noi,
+            ai acces la soluții integrate și personalizate, adaptate perfect
+            cerințelor tale.
           </p>
         </motion.div>
       </div>

@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const images = [
   "/images/hero-1.jpg",
-  "/images/hero-2.webp",
-  "/images/hero-3.jpg"
+  "/images/hero-2.jpg",
+  "/images/hero-3.jpg",
 ];
 
 const HomeHero = () => {
@@ -25,7 +25,8 @@ const HomeHero = () => {
     const section = document.getElementById("despre-noi");
     if (section) {
       const yOffset = -75; // Adjust this value to set the scroll position higher
-      const yPosition = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const yPosition =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: yPosition, behavior: "smooth" });
     }
   };
@@ -34,19 +35,20 @@ const HomeHero = () => {
     <div>
       <div className="w-full h-screen flex items-center justify-center relative overflow-hidden">
         <AnimatePresence>
-          {images.map((image, index) => (
-            index === currentSlide && (
-              <motion.div
-                key={index}
-                className="absolute w-full h-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${image})` }}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1 }}
-              />
-            )
-          ))}
+          {images.map(
+            (image, index) =>
+              index === currentSlide && (
+                <motion.div
+                  key={index}
+                  className="absolute w-full h-full bg-cover bg-center"
+                  style={{ backgroundImage: `url(${image})` }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1 }}
+                />
+              )
+          )}
         </AnimatePresence>
         <motion.div
           className="w-[70vw] h-auto p-5 relative z-10 flex-col place-self-center justify-center items-center bg-white dark:bg-gray-600 bg-opacity-75 dark:bg-opacity-75"

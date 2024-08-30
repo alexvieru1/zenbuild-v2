@@ -1,13 +1,15 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import AnimatedCounter from "../AnimatedCounter";
 
-
 const HomeAbout = () => {
   return (
-    <div id="despre-noi" className="flex 4xs:flex-col lg:flex-row justify-around">
+    <div
+      id="despre-noi"
+      className="flex 4xs:flex-col lg:flex-row justify-around"
+    >
       <div className="flex 4xs:flex-col lg:flex-row justify-around 4xs:w-full lg:w-[80%] mt-4">
         <div className="flex justify-end items-center  min-h-[70vh] lg:w-[50vw] lg:mr-5">
           <div className="flex-col justify-start  items-start text-end px-5 z-10">
@@ -21,7 +23,12 @@ const HomeAbout = () => {
               }}
               viewport={{ once: true }}
             >
-              <Image src="/images/hero-1.jpg" width={600} height={600} alt="img" />
+              <Image
+                src="/images/hero-4.jpg"
+                width={600}
+                height={600}
+                alt="img"
+              />
             </motion.div>
             <motion.div
               className="p-2"
@@ -51,27 +58,38 @@ const HomeAbout = () => {
             }}
             viewport={{ once: true }}
           >
-            <Image src="/images/despre-2.jpg" width={1000} height={1000} alt="img" />
+            <Image
+              src="/images/despre-2.jpg"
+              width={1000}
+              height={1000}
+              alt="img"
+            />
           </motion.div>
         </div>
         <div className=" min-h-[70vh] lg:w-[50vw] lg:ml-5 flex flex-col p-10">
           <h6 className="text-md text-[#bb835e] ">DESPRE NOI</h6>
-          <h2 className="text-xl text-center font-semibold mt-4">TEXT</h2>
+          <h2 className="text-xl text-center font-semibold mt-4">
+            Transformăm viziuni în realitate
+          </h2>
           <div className="gap-y-2 text-md text-start">
             <p>
+              Suntem o echipă de profesioniști dedicați, cu o experiență vastă
+              în domeniul construcțiilor, pregătiți să oferim soluții inovatoare
+              și durabile pentru fiecare proiect. Fie că este vorba despre
+              construcții rezidențiale, comerciale sau industriale, ne asigurăm
+              că fiecare detaliu este executat cu precizie și pasiune. Credem în
+              puterea colaborării și a calității, valori care ne ghidează în
+              toate etapele procesului de construcție. Cu Zen Build, fiecare
+              proiect devine o operă de artă, realizată la cele mai înalte
+              standarde.
+            </p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore e
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore e
-            </p>
+            </p> */}
           </div>
           <div className="flex justify-between mt-6 items-center">
             <motion.div
@@ -115,7 +133,7 @@ const HomeAbout = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HomeAbout
+export default HomeAbout;

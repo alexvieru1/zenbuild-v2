@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const images = ["/images/pc-1.jpeg", "/images/pc-2.jpg", "/images/pc-3.webp"];
+const images = ["/images/fizice-1.jpg", "/images/fizice-2.jpg"];
 
 const FiziceHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

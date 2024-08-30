@@ -13,67 +13,61 @@ import Autoplay from "embla-carousel-autoplay";
 const DezvoltariMain = () => {
   const ongoingProjects = [
     {
-      title: "Cavar Residence",
+      title: "Proiect Rezidențial Premium",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
+        "Lucrăm la dezvoltarea unui complex rezidențial modern, care va oferi locuințe de înaltă calitate, cu finisaje premium și dotări complete. Acest proiect reflectă angajamentul nostru pentru excelență și confort.",
       images: [
-        "/images/ongoing-projects/cavar-1.png",
-        "/images/ongoing-projects/cavar-2.png",
-        "/images/ongoing-projects/cavar-3.png",
+        "/images/ongoing-projects/residence-1.jpg",
+        "/images/ongoing-projects/residence-2.jpg",
+        "/images/ongoing-projects/residence-3.jpg",
       ],
     },
     {
-      title: "Lakefield Residence",
+      title: "Spațiu Comercial Multifuncțional",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Construim un spațiu comercial de mari dimensiuni, gândit să găzduiască diverse afaceri într-un mediu modern și eficient. Proiectul este adaptat pentru a răspunde cerințelor pieței actuale și viitoare.",
       images: [
-        "/images/ongoing-projects/lakefield-1.png",
-        "/images/ongoing-projects/lakefield-2.png",
-        "/images/ongoing-projects/lakefield-3.png",
+        "/images/ongoing-projects/business-1.jpg",
+        "/images/ongoing-projects/business-2.jpg",
+        "/images/ongoing-projects/business-3.jpg",
       ],
     },
     {
-      title: "Avalon Residence",
+      title: "Complex de Birouri Ecologic",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "În desfășurare se află un complex de birouri proiectat pentru a minimiza impactul asupra mediului, folosind tehnologii de construcție sustenabile și soluții energetice inovatoare.",
       images: [
-        "/images/ongoing-projects/avalon-1.png",
-        "/images/ongoing-projects/avalon-2.png",
-        "/images/ongoing-projects/avalon-3.png",
+        "/images/ongoing-projects/eco-1.jpg",
+        "/images/ongoing-projects/eco-2.jpg",
+        "/images/ongoing-projects/eco-3.jpg",
+      ],
+    },
+    {
+      title: "Renovare Clădire Istorică",
+      description:
+        "Suntem în proces de renovare a unei clădiri istorice, unde păstrăm elementele de patrimoniu, integrând în același timp facilități moderne pentru a aduce clădirea la standardele actuale.",
+      images: [
+        "/images/ongoing-projects/historical-1.jpg",
+        "/images/ongoing-projects/historical-2.jpg",
+      ],
+    },
+    {
+      title: "Amenajare Parc Industrial",
+      description:
+        "Lucrăm la dezvoltarea unui parc industrial, proiectat pentru a oferi infrastructură și facilități moderne pentru diverse industrii. Acest proiect este esențial pentru stimularea dezvoltării economice locale.",
+      images: [
+        "/images/ongoing-projects/industrial-1.jpg",
+        "/images/ongoing-projects/industrial-2.jpg",
+        "/images/ongoing-projects/industrial-3.jpg",
       ],
     },
   ];
 
   const completedProjects = [
     {
-      title: "Sud Residence",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore",
-      images: [
-        "/images/completed-projects/sud-1.webp",
-        "/images/completed-projects/sud-2.webp",
-        "/images/completed-projects/sud-3.webp",
-      ],
-    },
-    {
-      title: "Corbeanca Residence",
-      description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      images: [
-        "/images/completed-projects/corbeanca-1.webp",
-        "/images/completed-projects/corbeanca-2.webp",
-        "/images/completed-projects/corbeanca-3.webp",
-      ],
-    },
-    {
-      title: "Upground Residence",
-      description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      images: [
-        "/images/completed-projects/upground-1.webp",
-        "/images/completed-projects/upground-2.webp",
-        "/images/completed-projects/upground-3.jpg",
-      ],
+      title: "In curand!",
+      description: "In curand vom reveni cu lucrarile noastre finalizate",
+      images: ["/images/completed-projects/va-urma.jpg"],
     },
   ];
 
