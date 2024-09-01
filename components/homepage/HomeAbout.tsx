@@ -32,7 +32,7 @@ const HomeAbout = () => {
                 alt="img"
               />
             </motion.div>
-            {/* <motion.div
+            <motion.div
               className="p-2"
               initial={{ opacity: 0 }}
               whileInView={{
@@ -42,7 +42,7 @@ const HomeAbout = () => {
               onViewportEnter={() => setIsCounterVisible(true)}
               viewport={{ once: true }}
             >
-              {isCounterVisible && (
+              {/* {isCounterVisible && (
                 <AnimatedCounter
                   count={50}
                   classNameText="text-2xl text-[#bb835e] font-semibold"
@@ -50,9 +50,10 @@ const HomeAbout = () => {
                   delayAmount={3}
                   classNameSup="my-auto text-lg text-[#bb835e] font-semibold"
                 />
-              )}
-              <h1 className="font-semibold"> ani de experienta</h1>
-            </motion.div> */}
+              )} */}
+              <h1 className="4xs:text-lg 4xs:text-center md:text-start md:text-base font-semibold">
+                Partenerul tau de incredere{" "}
+              </h1>            </motion.div>
           </div>
           <motion.div
             initial={{ opacity: 0, x: 150 }}
@@ -90,7 +91,7 @@ const HomeAbout = () => {
             </p>
           </div>
           <div className="flex justify-between mt-6 items-center">
-            {/* <motion.div
+            <motion.div
               className="p-2 mx-auto"
               initial={{ opacity: 0 }}
               whileInView={{
@@ -100,7 +101,7 @@ const HomeAbout = () => {
               onViewportEnter={() => setIsCounterVisible(true)}
               viewport={{ once: true }}
             >
-              {isCounterVisible && (
+              {/* {isCounterVisible && (
                 <AnimatedCounter
                   count={110000}
                   classNameText="4xs:text-4xl md:text-2xl text-[#bb835e] font-semibold"
@@ -108,11 +109,11 @@ const HomeAbout = () => {
                   delayAmount={3}
                   classNameSup="my-auto text-lg text-[#bb835e] font-semibold"
                 />
-              )}
+              )} */}
               <h1 className="4xs:text-lg 4xs:text-center md:text-start md:text-base font-semibold">
-                clienti satisfacuti
+                Oferim servicii de calitate{" "}
               </h1>
-            </motion.div> */}
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 200 }}
               whileInView={{
