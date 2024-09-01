@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { sendContactForm } from "@/lib/api";
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "Numele complet este obligatoriu." }),
@@ -68,9 +69,15 @@ const ConstructoriMain = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    // Handle form submission, e.g., send the data to your backend.
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      await sendContactForm(values);
+      alert("Mesajul a fost trimis cu succes!");
+      form.reset(); // Reset the form after successful submission
+    } catch (error) {
+      console.error("Failed to send message", error);
+      alert("A apărut o problemă la trimiterea mesajului.");
+    }
   }
 
   return (

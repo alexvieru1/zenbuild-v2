@@ -35,43 +35,43 @@ const Navbar = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
                   href="/"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium transition-all duration-200 hover:underline hover:font-bold"
                 >
                   Acasa
                 </Link>
                 <Link
                   href="/servicii"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium transition-all duration-200 hover:underline hover:font-bold"
                 >
                   Servicii
                 </Link>
                 <Link
                   href="/dezvoltari-imobiliare"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium transition-all duration-200 hover:underline hover:font-bold"
                 >
                   Dezvoltări Imobiliare
                 </Link>
                 <Link
                   href="/inchirieri-utilaje"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium transition-all duration-200 hover:underline hover:font-bold"
                 >
                   Închirieri Utilaje{" "}
                 </Link>
                 <Link
                   href="/renovari"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium transition-all duration-200 hover:underline hover:font-bold"
                 >
                   Renovări
                 </Link>
                 <Link
                   href="/persoane-fizice"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium transition-all duration-200 hover:underline hover:font-bold"
                 >
                   Persoane Fizice
                 </Link>
                 <Link
                   href="/pentru-constructori"
-                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-md font-medium transition-all duration-200 hover:underline hover:font-bold"
                 >
                   Pentru Constructori
                 </Link>
@@ -117,54 +117,54 @@ const Navbar = () => {
           open: { opacity: 1, height: "auto" },
           closed: { opacity: 0, height: 0 },
         }}
-        className="lg:hidden overflow-hidden"
+        className="lg:hidden overflow-hidden bg-[#dfae8e]"
       >
         <div className="px-2 pt-2 pb-3 text-end space-y-1 sm:px-3">
           <Link
             href="/"
-            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium transition-all duration-200 hover:underline hover:font-bold"
             onClick={closeMenu}
           >
             Acasa
           </Link>
           <Link
             href="/servicii"
-            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium transition-all duration-200 hover:underline hover:font-bold"
             onClick={closeMenu}
           >
             Servicii
           </Link>
           <Link
             href="/dezvoltari-imobiliare"
-            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium transition-all duration-200 hover:underline hover:font-bold"
             onClick={closeMenu}
           >
             Dezvoltări Imobiliare
           </Link>
           <Link
             href="/inchirieri-utilaje"
-            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium transition-all duration-200 hover:underline hover:font-bold"
             onClick={closeMenu}
           >
             Închirieri Utilaje
           </Link>
           <Link
             href="/renovari"
-            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium transition-all duration-200 hover:underline hover:font-bold"
             onClick={closeMenu}
           >
             Renovări
           </Link>
           <Link
             href="/persoane-fizice"
-            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium transition-all duration-200 hover:underline hover:font-bold"
             onClick={closeMenu}
           >
             Persoane Fizice
           </Link>
           <Link
             href="/pentru-constructori"
-            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium"
+            className="block text-gray-800 hover:text-[#bb835e] px-3 py-2 rounded-md text-base font-medium transition-all duration-200 hover:underline hover:font-bold"
             onClick={closeMenu}
           >
             Pentru Constructori
