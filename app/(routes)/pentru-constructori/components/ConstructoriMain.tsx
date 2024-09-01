@@ -102,7 +102,7 @@ const ConstructoriMain = () => {
         ))}
       </div>
       <div className="flex flex-col justify-center">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-20 my-10 p-2">
+        <div className="w-full grid grid-cols-1 gap-20 my-10 p-2">
           <motion.div
             initial={{ x: "-100px", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -119,7 +119,7 @@ const ConstructoriMain = () => {
             </ul>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ x: "100px", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
@@ -133,7 +133,7 @@ const ConstructoriMain = () => {
               <p>Email: office@zenbuild.ro</p>
             </Link>
             <p>CUI: 50139928</p>
-          </motion.div>
+          </motion.div> */}
         </div>
         <div className="flex flex-col justify-center items-center">
           <p className="font-semibold text-lg my-4">Formular de contact</p>
