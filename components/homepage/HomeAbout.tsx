@@ -13,10 +13,10 @@ const HomeAbout = () => {
       className="flex 4xs:flex-col lg:flex-row justify-around overflow-hidden"
     >
       <div className="flex 4xs:flex-col lg:flex-row justify-around 4xs:w-full lg:w-[80%] mt-4">
-        <div className="flex justify-end items-center min-h-[70vh] lg:w-[50vw] lg:mr-5">
+        <div className="flex justify-end items-center lg:w-[50vw] lg:mr-5">
           <div className="flex-col justify-start items-start text-end px-5 z-10">
             <motion.div
-              className="border-white border-t-[20px] border-b-[20px] border-r-[15px]"
+              className="border-white border-t-[20px] border-b-[20px] border-r-[15px] 4xs:block"
               initial={{ opacity: 0, x: -200 }}
               whileInView={{
                 opacity: 1,
@@ -42,18 +42,10 @@ const HomeAbout = () => {
               onViewportEnter={() => setIsCounterVisible(true)}
               viewport={{ once: true }}
             >
-              {/* {isCounterVisible && (
-                <AnimatedCounter
-                  count={50}
-                  classNameText="text-2xl text-[#bb835e] font-semibold"
-                  classNameDiv="flex flex-row justify-end items-end"
-                  delayAmount={3}
-                  classNameSup="my-auto text-lg text-[#bb835e] font-semibold"
-                />
-              )} */}
-              <h1 className="4xs:text-lg 4xs:text-center md:text-start md:text-base font-semibold">
-                Partenerul tau de incredere{" "}
-              </h1>            </motion.div>
+              <h1 className="4xs:text-lg 4xs:text-center md:text-start md:text-base font-semibold text-[#bb835e]">
+                Partenerul tău de încredere
+              </h1>
+            </motion.div>
           </div>
           <motion.div
             initial={{ opacity: 0, x: 150 }}
@@ -101,17 +93,8 @@ const HomeAbout = () => {
               onViewportEnter={() => setIsCounterVisible(true)}
               viewport={{ once: true }}
             >
-              {/* {isCounterVisible && (
-                <AnimatedCounter
-                  count={110000}
-                  classNameText="4xs:text-4xl md:text-2xl text-[#bb835e] font-semibold"
-                  classNameDiv="flex flex-row justify-end items-end"
-                  delayAmount={3}
-                  classNameSup="my-auto text-lg text-[#bb835e] font-semibold"
-                />
-              )} */}
-              <h1 className="4xs:text-lg 4xs:text-center md:text-start md:text-base font-semibold">
-                Oferim servicii de calitate{" "}
+              <h1 className="4xs:text-lg 4xs:text-center md:text-start md:text-base font-semibold text-[#bb835e]">
+                Oferim servicii de calitate
               </h1>
             </motion.div>
             <motion.div
@@ -124,7 +107,7 @@ const HomeAbout = () => {
               viewport={{ once: true }}
             >
               <Image
-                className="4xs:hidden md:block"
+                className="4xs:block"
                 src="/images/despre-1.jpg"
                 width={300}
                 height={150}
