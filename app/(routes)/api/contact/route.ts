@@ -2,10 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { mailOptions, transporter } from "@/config/nodemailer";
 
 const CONTACT_MESSAGE_FIELDS: { [key: string]: string } = {
-  name: "Full Name",
+  fullName: "Nume complet",
   email: "Email",
-  subject:"Subject",
-  message: "Message",
+  subject:"Subiect",
+  message: "Mesaj",
 };
 
 const generateEmailContent = (data: any) => {
@@ -82,7 +82,7 @@ const generateEmailContent = (data: any) => {
             <h1>Zenbuild - Mesaj nou</h1>
           </div>
           <div class="content">
-            <h2>You have received a new message:</h2>
+            <h2>Ai primit un mesaj nou:</h2>
             <table>
               ${htmlData}
             </table>
@@ -104,7 +104,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       ...mailOptions,
       ...generateEmailContent(data),
-      subject: `Zenbuild - ${data.subject}`,
+      subject: `Zenbuild - Mesaj nou`,
     });
 
     return NextResponse.json({ success: true }, { status: 200 });
