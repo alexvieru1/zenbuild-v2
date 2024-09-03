@@ -12,7 +12,7 @@ const fontSans = FontSans({
 });
 export const metadata: Metadata = {
   title: "Zenbuild",
-  description: "v2.0",
+  description: "Dezvoltari imobiliare, inchiriere utilaje, renovari",
 };
 
 export default function RootLayout({
